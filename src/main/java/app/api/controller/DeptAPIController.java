@@ -28,6 +28,11 @@ public class DeptAPIController {
 		return "dept api controller";
 	}
 	
+	@GetMapping("/git")
+	public String gitApi() {
+		return "git api controller";
+	}
+	
 	@GetMapping("/depts")
 	public List<Dept> getDepts() {
 		List<Dept> depts = deptService.getDepts();
